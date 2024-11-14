@@ -93,6 +93,284 @@ h1 {
     color: hsl(210, 50%, 60%);
 }
 
+/* esto es para el nav bar */
+/* Título de la página */
+.page-title {
+    text-align: center;
+    color: hsl(210, 50%, 60%);
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 1em;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-card-color); /* O usa el color que prefieras */
+    padding: 1em 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5em;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar a {
+    color: var(--primary-color); /* Color de los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition), color var(--transition);
+}
+
+.navbar a:hover {
+    background-color: var(--primary-color);
+    color: white; /* Cambia el color del texto al hacer hover */
+}
+
+.navbar a.active {
+    background-color: var(--primary-color); /* Marca la página activa */
+    color: white;
+}
+/* fin del nav bar */
+
+/* Estilo de la sección de bienvenida */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 2em;
+    text-align: center;
+    background: var(--bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 2em auto;
+    max-width: 800px;
+}
+
+/* Estilo del encabezado */
+.welcome-section h2 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0.5em;
+}
+
+/* Estilo del párrafo */
+.welcome-section p {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 600px;
+}
+
+
+/* para los proyectos*/
+/* Sección de Proyectos */
+.projects-section {
+    padding: 2em;
+    background-color: var(--bg-color);
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 1em;
+}
+
+/* Contenedor de Proyectos */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+
+/* Tarjetas de Proyecto */
+.project-card {
+    background-color: var(--bg-card-color);
+    padding: 1em;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen del Proyecto */
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin-bottom: 1em;
+}
+
+/* Enlaces y Descripción del Proyecto */
+.project-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.project-card p {
+    color: var(--text-color);
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.project-links {
+    display: flex;
+    gap: 1em;
+}
+
+.project-links a {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0.5em 1em;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: background-color var(--transition);
+}
+
+.project-links a:hover {
+    background-color: hsl(214, 84%, 46%);
+}
+/* fin de los proyectos  */
+
+
+/* Sección de Contacto */
+.contact-section {
+    padding: 2em;
+    background-color: var(--bg-color);
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+}
+
+.contact-section p {
+    color: var(--text-color);
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+/* Contenedor de Contactos */
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5em;
+}
+
+/* Tarjeta de Contacto */
+.contact-card {
+    background-color: var(--bg-card-color);
+    padding: 1em;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+}
+
+/* Íconos de Contacto */
+.contact-icon {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+}
+
+/* Enlaces de Contacto */
+.contact-card h3 {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.contact-card a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color var(--transition);
+}
+
+.contact-card a:hover {
+    color: var(--primary-color);
+}
+
+.contact-card .fa-whatsapp {
+    color: #25D366; /* Color verde de WhatsApp */
+}
+
+/* fin de contactos */
+
+
+
+/* Sección Acerca de Mí */
+.about-section {
+    padding: 2em;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 800px;
+    gap: 2em;
+}
+
+/* Imagen de Perfil */
+.about-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido de la Biografía */
+.about-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-content h2 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.about-content p {
+    color: var(--text-color);
+    font-size: 1em;
+    line-height: 1.6;
+}
+/* fin de Acerca de Mí */
+
 
 
 
